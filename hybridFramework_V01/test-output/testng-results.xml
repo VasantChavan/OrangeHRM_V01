@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="orangeHRM" duration-ms="66319" started-at="2020-07-11T06:14:39Z" finished-at="2020-07-11T06:15:45Z">
+    <groups>
+    </groups>
+    <test name="OrangeHRM Demo Automation Project Test" duration-ms="66319" started-at="2020-07-11T06:14:39Z" finished-at="2020-07-11T06:15:45Z">
+      <class name="com.orangeHrm.testCases.TC_LoginTest_001">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@2a5ca609]" name="init" is-config="true" duration-ms="119" started-at="2020-07-11T11:44:39Z" finished-at="2020-07-11T11:44:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@2a5ca609]" name="setup" is-config="true" duration-ms="24431" started-at="2020-07-11T11:44:39Z" finished-at="2020-07-11T11:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginToOrangeHRMTest()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@2a5ca609]" name="loginToOrangeHRMTest" duration-ms="38158" started-at="2020-07-11T11:45:03Z" finished-at="2020-07-11T11:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToOrangeHRMTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@2a5ca609]" name="teardown" is-config="true" duration-ms="3647" started-at="2020-07-11T11:45:42Z" finished-at="2020-07-11T11:45:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.orangeHrm.testCases.TC_LoginTest_001 -->
+    </test> <!-- OrangeHRM Demo Automation Project Test -->
+  </suite> <!-- orangeHRM -->
+</testng-results>
