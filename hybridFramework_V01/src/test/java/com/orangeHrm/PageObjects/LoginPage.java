@@ -1,5 +1,4 @@
 package com.orangeHrm.PageObjects;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -28,6 +27,7 @@ public class LoginPage {
 	@CacheLookup
 	WebElement logoutLink;
 	
+		
 	WebDriver driver;
 	
 	public LoginPage(WebDriver driver){		
@@ -42,16 +42,14 @@ public class LoginPage {
 		try{				
 			userName.sendKeys(username);
 			userPass.sendKeys(userpass);
-			loginBtn.click();
-			
+			loginBtn.click();			
 		}catch(Exception e){
 			System.out.println("Element not found and exception is :"+e.getMessage());
 		}
 	}
 	
 	public void logoutFromOrangeHRM(){
-		
-		logoutLink.click();
+		logoutLink.click();				
 	}
 	
 }

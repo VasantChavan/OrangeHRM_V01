@@ -11,15 +11,18 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import com.orangeHrm.utility.ConfigDataProvider;
+import com.orangeHrm.utility.ExcelDataProvider;
 
 public class BaseClass {
 
 	public static WebDriver driver = null;
 	public ConfigDataProvider configData;
+	public ExcelDataProvider excelDataProvider;
 	
 	@BeforeSuite
 	public void init(){		
 		configData = new ConfigDataProvider();
+		excelDataProvider=new ExcelDataProvider("login");
 	}
 
 	
