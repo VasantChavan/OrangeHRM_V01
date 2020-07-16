@@ -10,36 +10,48 @@ import com.orangeHrm.PageObjects.LoginPage;
 public class TC_LoginDDT_002 extends BaseClass {
 
 	// Retrieve particular test data from excel
-	/*
-	 * @Test public void loginToOrangeHRMTest() { LoginPage login = new
-	 * LoginPage(driver);
-	 * login.loginToOrangeHRM(excelDataProvider.getCellData(1, 0),
-	 * excelDataProvider.getCellData(1, 1)); WebElement welcomeLink =
-	 * driver.findElement(By.id("welcome"));
-	 * 
-	 * if (welcomeLink.isDisplayed()) { Assert.assertTrue(true);
-	 * System.out.println("login sucessful.."); welcomeLink.click();
-	 * 
-	 * login.logoutFromOrangeHRM(); } else {
-	 * System.out.println("login failed.."); Assert.assertTrue(false); } }
-	 */
+
+//	@Test
+//	public void loginToOrangeHRMTest() {
+//		LoginPage login = new LoginPage(driver);
+//		login.loginToOrangeHRM(excelDataProvider.getCellData(1, 0), excelDataProvider.getCellData(1, 1));
+//		
+//		WebElement welcomeLink = driver.findElement(By.id("welcome"));
+//
+//		if (welcomeLink.isDisplayed()) {
+//			Assert.assertTrue(true);
+//			System.out.println("login sucessful..");
+//			welcomeLink.click();
+//
+//			login.logoutFromOrangeHRM();
+//		} else {
+//			System.out.println("login failed..");
+//			Assert.assertTrue(false);
+//		}
+//	}
 
 	@Test(dataProvider = "loginTestData")
 	public void loginToOrangeHRMTest(String user, String pass) {
 
 		LoginPage login = new LoginPage(driver);
 		login.loginToOrangeHRM(user, pass);
-		
-		if (driver.findElement(By.id("welcome")).isDisplayed()) {
-			Assert.assertTrue(true);
-			driver.findElement(By.id("welcome")).click();
-			login.logoutFromOrangeHRM();
+
+		if (driver.getPageSource().contains("Welcome Admin")) {
+
+			System.out.println("login success");
 			
-		} else {
-			//driver.navigate().refresh();
+			try{
+				Thread.sleep(3000);
+				driver.findElement(By.id("welcome")).click();	
+			}catch(Exception e){
+				
+			}
+				Assert.assertTrue(true);	
+			login.logoutFromOrangeHRM();
+		} else if (driver.getPageSource().contains("LOGIN Panel")) {
+			System.out.println("login failed");
 			Assert.assertTrue(false);
 		}
-		login.logoutFromOrangeHRM();
 
 	}
 

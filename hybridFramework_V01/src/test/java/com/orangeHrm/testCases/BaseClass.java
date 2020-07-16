@@ -46,7 +46,7 @@ public class BaseClass {
 			System.out.println("browser driver is not matching please check once again");
 		}
 		driver.get(configData.getAppUrl());		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@AfterClass

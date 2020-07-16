@@ -7,7 +7,7 @@
         <methods>
           <include name="init"/>
           <include name="teardown"/>
-          <include name="loginToOrangeHRMTest" invocation-numbers="0 1 2 3"/>
+          <include name="loginToOrangeHRMTest" invocation-numbers="1 2"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.orangeHrm.testCases.TC_LoginDDT_002 -->
