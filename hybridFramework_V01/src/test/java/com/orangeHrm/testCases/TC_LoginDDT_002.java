@@ -31,8 +31,9 @@ public class TC_LoginDDT_002 extends BaseClass {
 //	}
 
 	@Test(dataProvider = "loginTestData")
-	public void loginToOrangeHRMTest(String user, String pass) {
+	public void loginToOrangeHRMDDTest(String user, String pass) {
 
+		test_Logger= extent.createTest("loginToOrangeHRMDDTest");
 		LoginPage login = new LoginPage(driver);
 		login.loginToOrangeHRM(user, pass);
 
@@ -46,7 +47,7 @@ public class TC_LoginDDT_002 extends BaseClass {
 			}catch(Exception e){
 				
 			}
-				Assert.assertTrue(true);	
+			Assert.assertTrue(true);	
 			login.logoutFromOrangeHRM();
 		} else if (driver.getPageSource().contains("LOGIN Panel")) {
 			System.out.println("login failed");

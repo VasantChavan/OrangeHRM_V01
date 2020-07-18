@@ -1,167 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="4" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="112006" started-at="2020-07-15T05:45:35Z" finished-at="2020-07-15T05:47:27Z">
+  <suite name="Default suite" duration-ms="71086" started-at="2020-07-18T07:03:00Z" finished-at="2020-07-18T07:04:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="112006" started-at="2020-07-15T05:45:35Z" finished-at="2020-07-15T05:47:27Z">
-      <class name="com.orangeHrm.testCases.TC_LoginDDT_002">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="init" is-config="true" duration-ms="2175" started-at="2020-07-15T11:15:33Z" finished-at="2020-07-15T11:15:35Z">
+    <test name="Default test" duration-ms="71086" started-at="2020-07-18T07:03:00Z" finished-at="2020-07-18T07:04:11Z">
+      <class name="com.orangeHrm.testCases.TC_LoginTest_001">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="init" is-config="true" duration-ms="4636" started-at="2020-07-18T12:32:55Z" finished-at="2020-07-18T12:33:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="setup" is-config="true" duration-ms="53581" started-at="2020-07-15T11:15:35Z" finished-at="2020-07-15T11:16:29Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="setExtent" is-config="true" duration-ms="1494" started-at="2020-07-18T12:33:00Z" finished-at="2020-07-18T12:33:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="setup" is-config="true" duration-ms="35539" started-at="2020-07-18T12:33:01Z" finished-at="2020-07-18T12:33:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginToOrangeHRMTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="loginToOrangeHRMTest" duration-ms="31405" started-at="2020-07-15T11:16:29Z" data-provider="loginTestData" finished-at="2020-07-15T11:17:01Z">
+        <test-method status="PASS" signature="loginToOrangeHRMTest()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="loginToOrangeHRMTest" duration-ms="21835" started-at="2020-07-18T12:33:37Z" finished-at="2020-07-18T12:33:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToOrangeHRMTest -->
+        <test-method status="PASS" signature="extentStatus(org.testng.ITestResult)[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="extentStatus" is-config="true" duration-ms="56" started-at="2020-07-18T12:33:59Z" finished-at="2020-07-18T12:33:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
+                <![CDATA[[TestResult name=loginToOrangeHRMTest status=SUCCESS method=TC_LoginTest_001.loginToOrangeHRMTest()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToOrangeHRMTest -->
-        <test-method status="FAIL" signature="loginToOrangeHRMTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="loginToOrangeHRMTest" duration-ms="7659" started-at="2020-07-15T11:17:01Z" data-provider="loginTestData" finished-at="2020-07-15T11:17:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vasant]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.orangeHrm.testCases.TC_LoginDDT_002.loginToOrangeHRMTest(TC_LoginDDT_002.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToOrangeHRMTest -->
-        <test-method status="FAIL" signature="loginToOrangeHRMTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="loginToOrangeHRMTest" duration-ms="9541" started-at="2020-07-15T11:17:08Z" data-provider="loginTestData" finished-at="2020-07-15T11:17:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123$]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at com.orangeHrm.testCases.TC_LoginDDT_002.loginToOrangeHRMTest(TC_LoginDDT_002.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToOrangeHRMTest -->
-        <test-method status="PASS" signature="loginToOrangeHRMTest(java.lang.String, java.lang.String)[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="loginToOrangeHRMTest" duration-ms="8462" started-at="2020-07-15T11:17:18Z" data-provider="loginTestData" finished-at="2020-07-15T11:17:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToOrangeHRMTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orangeHrm.testCases.TC_LoginDDT_002@55f3ddb1]" name="teardown" is-config="true" duration-ms="1129" started-at="2020-07-15T11:17:26Z" finished-at="2020-07-15T11:17:27Z">
+        </test-method> <!-- extentStatus -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="teardown" is-config="true" duration-ms="7886" started-at="2020-07-18T12:33:59Z" finished-at="2020-07-18T12:34:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.orangeHrm.testCases.TC_LoginDDT_002 -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="endReport" is-config="true" duration-ms="4165" started-at="2020-07-18T12:34:06Z" finished-at="2020-07-18T12:34:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.orangeHrm.testCases.TC_LoginTest_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

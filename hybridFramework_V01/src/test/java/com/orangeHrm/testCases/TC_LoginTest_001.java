@@ -11,8 +11,13 @@ public class TC_LoginTest_001 extends BaseClass {
 		
 	@Test
 	public void loginToOrangeHRMTest(){
-	//java.lang.OutOfMemoryError: Java heap space
+	
+		test_Logger=extent.createTest("loginToOrangeHRMTest");
+		
+		//test_Logger.info("This is my login test");
+		
 		LoginPage login =new LoginPage(driver);		
+		
 		login.loginToOrangeHRM(configData.getUser(), configData.getPass());
 		
 		WebElement welcomeLink=driver.findElement(By.id("welcome"));
