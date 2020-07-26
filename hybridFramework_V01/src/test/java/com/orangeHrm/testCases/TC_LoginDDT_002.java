@@ -33,7 +33,6 @@ public class TC_LoginDDT_002 extends BaseClass {
 	@Test(dataProvider = "loginTestData")
 	public void loginToOrangeHRMDDTest(String user, String pass) {
 
-		test_Logger= extent.createTest("loginToOrangeHRMDDTest");
 		LoginPage login = new LoginPage(driver);
 		login.loginToOrangeHRM(user, pass);
 

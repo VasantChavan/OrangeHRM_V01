@@ -2,47 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="71086" started-at="2020-07-18T07:03:00Z" finished-at="2020-07-18T07:04:11Z">
+  <suite name="orangeHRM" duration-ms="86268" started-at="2020-07-26T08:24:56Z" finished-at="2020-07-26T08:26:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="71086" started-at="2020-07-18T07:03:00Z" finished-at="2020-07-18T07:04:11Z">
+    <test name="OrangeHRM Demo Automation Project Test" duration-ms="86268" started-at="2020-07-26T08:24:56Z" finished-at="2020-07-26T08:26:23Z">
       <class name="com.orangeHrm.testCases.TC_LoginTest_001">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="init" is-config="true" duration-ms="4636" started-at="2020-07-18T12:32:55Z" finished-at="2020-07-18T12:33:00Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@29626d54]" name="init" is-config="true" duration-ms="4969" started-at="2020-07-26T13:54:51Z" finished-at="2020-07-26T13:54:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="setExtent" is-config="true" duration-ms="1494" started-at="2020-07-18T12:33:00Z" finished-at="2020-07-18T12:33:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="setup" is-config="true" duration-ms="35539" started-at="2020-07-18T12:33:01Z" finished-at="2020-07-18T12:33:37Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@29626d54]" name="setup" is-config="true" duration-ms="42995" started-at="2020-07-26T13:54:57Z" finished-at="2020-07-26T13:55:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginToOrangeHRMTest()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="loginToOrangeHRMTest" duration-ms="21835" started-at="2020-07-18T12:33:37Z" finished-at="2020-07-18T12:33:59Z">
+        <test-method status="PASS" signature="loginToOrangeHRMTest()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@29626d54]" name="loginToOrangeHRMTest" duration-ms="36165" started-at="2020-07-26T13:55:40Z" finished-at="2020-07-26T13:56:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToOrangeHRMTest -->
-        <test-method status="PASS" signature="extentStatus(org.testng.ITestResult)[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="extentStatus" is-config="true" duration-ms="56" started-at="2020-07-18T12:33:59Z" finished-at="2020-07-18T12:33:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginToOrangeHRMTest status=SUCCESS method=TC_LoginTest_001.loginToOrangeHRMTest()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- extentStatus -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="teardown" is-config="true" duration-ms="7886" started-at="2020-07-18T12:33:59Z" finished-at="2020-07-18T12:34:06Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@29626d54]" name="teardown" is-config="true" duration-ms="6342" started-at="2020-07-26T13:56:16Z" finished-at="2020-07-26T13:56:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.orangeHrm.testCases.TC_LoginTest_001@59fa1d9b]" name="endReport" is-config="true" duration-ms="4165" started-at="2020-07-18T12:34:06Z" finished-at="2020-07-18T12:34:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endReport -->
       </class> <!-- com.orangeHrm.testCases.TC_LoginTest_001 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- OrangeHRM Demo Automation Project Test -->
+  </suite> <!-- orangeHRM -->
 </testng-results>

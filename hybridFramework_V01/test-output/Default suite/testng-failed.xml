@@ -7,11 +7,7 @@
         <methods>
           <include name="loginToOrangeHRMTest"/>
           <include name="init"/>
-          <include name="teardown"/>
-          <include name="endReport"/>
-          <include name="setExtent"/>
           <include name="setup"/>
-          <include name="extentStatus"/>
         </methods>
       </class> <!-- com.orangeHrm.testCases.TC_LoginTest_001 -->
     </classes>

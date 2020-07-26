@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="orangeHRM">
+
+	<listeners>
+		<listener class-name="com.orangeHrm.utility.TestNgListeners" />
+	</listeners>
+
+	<test name="OrangeHRM Demo Automation Project Test">
+		<classes>
+			<class name="com.orangeHrm.testCases.TC_LoginTest_001" />
+			<!-- <class name="com.orangeHrm.testCases.TC_LoginDDT_002"/> -->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

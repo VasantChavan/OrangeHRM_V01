@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [orangeHRM]">
+  <listeners>
+    <listener class-name="com.orangeHrm.utility.TestNgListeners"/>
+  </listeners>
   <test name="OrangeHRM Demo Automation Project Test(failed)">
     <classes>
-      <class name="com.orangeHrm.testCases.TC_LoginDDT_002">
-        <methods>
-          <include name="loginToOrangeHRMDDTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.orangeHrm.testCases.TC_LoginDDT_002 -->
       <class name="com.orangeHrm.testCases.TC_LoginTest_001">
         <methods>
+          <include name="loginToOrangeHRMTest"/>
           <include name="init"/>
           <include name="teardown"/>
-          <include name="setExtent"/>
           <include name="setup"/>
-          <include name="extentStatus"/>
         </methods>
       </class> <!-- com.orangeHrm.testCases.TC_LoginTest_001 -->
     </classes>
